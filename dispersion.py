@@ -79,7 +79,7 @@ def calculate_dispersion(same_neighbors):
     for s,t in comb:
       if s in same_neighbors_dict[t]:
         continue
-      if len(same_neighbors_dict[s].intersection(same_neighbors_dict[t])) > 2:
+      if len(same_neighbors_dict[s].intersection(same_neighbors_dict[t])) > 1:
         continue
       dispersion += 1
 
